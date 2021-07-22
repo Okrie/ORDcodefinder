@@ -29,9 +29,13 @@ def __main__():
     listner.start()
 
     if on_release == False:
-        exit()
+        return False
     
 
 
 if __name__ == '__main__':
+    import sys
+    print('Go Code Finder')
     __main__()
+    if __main__ == False:
+        sys.exit()
