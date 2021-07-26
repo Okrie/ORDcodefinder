@@ -1,6 +1,6 @@
-from pynput import keyboard
 from modulefunc import loadSavecode
 from pynput.keyboard import Key, Controller, KeyCode
+from pynput import keyboard
 
 
 def on_press(key):
