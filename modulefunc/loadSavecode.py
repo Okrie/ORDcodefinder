@@ -1,6 +1,5 @@
 import os, sys, time
-
-import pyautogui
+import pyautogui, pyperclip
 
 def loadFile():
     try:
@@ -16,7 +15,7 @@ def loadFile():
         for file_name in list_of_files:
             file_path = os.path.join(path_dir, file_name)
             timestamp_str = time.strftime(  '%m/%d/%Y :: %H:%M:%S', time.gmtime(os.path.getmtime(file_path))) 
-            print(timestamp_str, ' -->', file_name)
+            #print(timestamp_str, ' -->', file_name)
 
         saveCodeFile = file_name
         print(saveCodeFile)
@@ -27,7 +26,9 @@ def loadFile():
         f.close()
 
         pyautogui.press('enter')
-        pyautogui.write(saveCodeStr)
+        pyperclip.copy(saveCodeStr)
+        pyautogui.hotkey('ctrl', 'v')
+        #pyautogui.write(saveCodeStr)
         pyautogui.press('enter')
     except Exception as e:
         print(e)
