@@ -1,2 +1,3 @@
 /build
-modulefunc/printResult.py
+*.pyc
+*/__pycache__
