@@ -52,7 +52,7 @@ if __name__ == '__main__':
     print(' Go Code finder')
     print(' * => SaveCode Load')
     print(' = => Random Rules')
-    print('-'*40)
+    print('-'*40, '\n')
     __main__()
     if __main__ == False:
         sys.exit()  

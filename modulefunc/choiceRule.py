@@ -42,7 +42,7 @@ def randomRule():
         result = unit_rule(4)
         printResult.printresult(', '.join(result))
 
-    print('----- Done -----')
+    print('----- Done -----\n\n')
 
 
 def unit_rule(inputnum):
@@ -70,7 +70,7 @@ def unit_rule(inputnum):
         unit_list.pop(unit_list.index('니카 (뱀초)'))
         unit_list.pop(unit_list.index('초월쿠마'))
         unit_list.append('니카')
-    print("-----Scrapy  Done----")
+    print("-----Scrapy  Done----\n\n")
     return random.choices(unit_list, k=inputnum)
 
 
